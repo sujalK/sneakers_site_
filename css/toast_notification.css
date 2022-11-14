@@ -1,0 +1,80 @@
+/* section: toast-notification */
+#toast-notification {
+    opacity: 1 !important;
+    background-color: #fff;
+    margin: 1.25rem 3rem;
+    font-size: 1.25rem;
+    position: fixed;
+    top: 0;
+    right: -30px;
+    z-index: 1;
+}
+
+.redish-notice {
+    background: rgb(220, 57, 57) !important;
+}
+
+#toast-notification .notice {
+    /* border: 1px solid rgba(0, 0, 0, 0.09); */
+    /* border-radius: 5px; */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    max-width: 350px;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    margin: 0;
+    position: relative;
+}
+
+#toast-notification .notice .close-notice {
+    position: absolute;
+    top: 2px;
+    right: 22px;
+    /* border-radius: 50%;
+    padding: .2rem .5rem;
+    border: 1px solid #222;
+    font-size: .8rem; */
+}
+
+#toast-notification .notice .saved-text {
+    font-size: 1rem;
+}
+
+#toast-notification .notice .check-circle {
+    background: #50C878;
+    padding: 1.5rem 1.25rem;
+    margin: 0 .55rem 0 0;
+}
+
+#toast-notification .notice .check-circle i {
+    color: #fff;
+    text-align: center;
+}
+
+#toast-notification .notice .close-notice {
+    cursor: pointer;
+    margin-left: 2.25rem;
+}
+
+/* for smaller devices */
+@media screen and (max-width: 450px) {
+    #toast-notification {
+        font-size: .75rem;
+    }
+
+    #toast-notification a {
+        font-size: .75rem;
+    }
+
+    #toast-notification .notice .check-circle {
+        padding: .5rem;
+    }
+
+    #toast-notification .notice {
+        padding: .3rem .5rem .5rem 0;
+    }
+
+    #toast-notification .notice .saved-text {
+        font-size: 1rem;
+    }
+}

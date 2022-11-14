@@ -1,0 +1,31 @@
+/* terms */
+#privacy-policy {
+    margin-top: 7em;
+    padding: .75rem;
+}
+
+
+.privacy-policy-title {
+    font-weight: bold;
+    padding-bottom: 1.25rem;
+}
+
+.privacy-policy-subtitle {
+    font-weight: bold;
+    font-size: .85rem;
+    padding-bottom: .25rem;
+}
+
+.privacy-policy-release-date {
+    padding: .75rem 0;
+}
+
+.privacy-policy-description {
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+    #privacy-policy {
+        margin-top: 9em;
+    }
+}

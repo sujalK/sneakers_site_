@@ -1,0 +1,223 @@
+.hide-bigger-screen,
+.hide {
+    display: none;
+}
+
+.show {
+    display: initial;
+}
+
+.gallery-item.show {
+    animation: fadeIn 250ms ease-in-out;
+}
+
+@keyframes fadeIn{
+	0%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.main-header .profile-img img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center right;
+}
+
+.search-bar {
+    display: flex;
+    width: 55%;
+}
+
+.search-term {
+    width: 100%;
+    /* border: 3px solid #00B4CC; */
+    border: none;
+    border-right: none;
+    padding: 1.5em;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.search-term::placeholder {
+    font-family: var(--site-font);
+    font-weight: 500;
+    color: #969696;
+    opacity: 1;
+  }
+
+.lnr-magnifier-bar {
+    margin-left: -4em;
+    color: #969696;
+}
+
+#styles {
+    margin-top: 9em;
+}
+
+.slick-prev::before {
+    content: "";
+    font-family: 'FontAwesome';
+    font-size: 22px;
+    color: #646464;
+}
+
+.slick-next::before{
+    content: "";
+    font-family: 'FontAwesome';
+    font-size: 22px;
+    color: #646464;
+}
+
+.scrollable-categories {
+    position: relative;
+}
+
+.scrollable-categories::after {
+    content: '';
+    background: rgb(249,249,249);
+    background: linear-gradient(90deg, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 50%, rgba(249,249,249,1) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 100;
+}
+
+.scrollable-categories .category {
+    /* background-color: aqua; */
+    margin-right: 1em;
+    padding: 1em 0;
+}
+
+.scrollable-categories .category a {
+    /* background-color: blue; */
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-family: var(--site-font);
+    font-weight: 600;
+    background-color: #fff;
+    color: #646464;
+    border-radius: 7px;
+    border: thin solid #f7f5f5;
+    transition: 250ms ease;
+}
+
+.scrollable-categories .category .active,
+.scrollable-categories .category a:hover {
+    background-color: #646464;
+    color: #fff;
+    border-color: #646464;
+}
+
+.styles-container {
+    width: 975px;
+    margin: 25px auto;
+    max-width: 100%;
+}
+
+.styles-container .styles-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.styles-container .styles-wrapper .style,
+.styles-container .styles-wrapper .style img {
+    height: 293px;
+    width: 293px;
+    object-fit: cover;
+    object-position: center right;
+}
+
+.styles-container .styles-wrapper .style {
+    margin: 16px;
+}
+
+.more-styles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more-styles .lnr-plus-circle {
+    font-size: 4rem;
+    color: #646464;
+}
+
+@media screen and (max-width: 950px) {
+    .styles-container .styles-wrapper .style,
+    .styles-container .styles-wrapper .style img {
+    height: 250px;
+    width: 250px;   
+    }
+
+    .styles-container .styles-wrapper .style {
+        margin: 6px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .styles-container .styles-wrapper .style,
+    .styles-container .styles-wrapper .style img {
+    height: 200px;
+    width: 200px;   
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* hide menu items */
+    .hide-menu-item {
+        display: none;
+    }
+
+    .hide-bigger-screen {
+        display: initial;
+    }
+
+    #hero .hero-container .header .main-header {
+        flex-direction: row-reverse;
+        padding: 1em;
+    }
+
+    #hero {
+        padding: 0;
+    }
+
+    .scrollable-categories .category a {
+        /* background-color: blue; */
+        padding: 0.5em 1em;
+        font-size: 0.75rem;
+    }
+
+    .styles-container .styles-wrapper .style,
+    .styles-container .styles-wrapper .style img {
+    height: 120px;
+    width: 120px;   
+    object-fit: cover;
+    object-position: center right;
+    }
+
+    .styles-container .styles-wrapper .style {
+        margin: 2px;
+    }
+
+    #hero .hero-container {
+        padding: 0;
+    }
+    
+    .scrollable-categories {
+        overflow: hidden;
+    }
+}    

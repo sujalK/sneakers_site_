@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    background: rgb(245,245,245);
+}
+
+/* section: 404 */
+#page-404 {
+    margin-top: 7em;
+    margin-left: .75rem;
+    margin-right: .75rem;
+}
+
+#page-404 .page-404-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1100px;
+}
+
+#page-404 .page-404-container .text-container {
+    align-self: center;
+    justify-self: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#page-404 .page-404-container .text-container h1 {
+    font-size: 4rem;
+}
+
+#page-404 .page-404-container .text-container .oops {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#page-404 .page-404-container .text-container .page-not-found {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: .75rem;
+}
+
+#page-404 .page-404-container .text-container .description-text {
+    color: grey;
+    padding-bottom: 2.25rem;
+    line-height: 1.5;
+}
+
+#page-404 .page-404-container .text-container .back-to-home-btn {
+    font-size: 1rem;
+    padding: .75rem 1.75rem;
+    border: 1px solid #000;
+    border-radius: 30px;
+    background: rgb(201,190,234);
+    font-weight: bold;
+    transition: .2s all;
+}
+
+#page-404 .page-404-container .text-container .back-to-home-btn:hover {
+    background: rgb(209, 196, 248);
+}
+
+#page-404 .page-404-container .img-container {
+    justify-self: start;
+}
+
+/* for smaller devicdes */
+@media screen and (max-width: 650px) {
+    #page-404 .page-404-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page-404 .page-404-container .img-container {
+        order: 1;
+        max-width: 300px;
+        align-self: center;
+        margin-top: 3em;
+    }
+
+    #page-404 .page-404-container .text-container {
+        order: 2;
+        margin-top: 1.25rem;
+        text-align: center;
+    }
+
+    #page-404 .page-404-container .text-container h1 {
+        font-size: 2.5rem;
+    }
+
+    #page-404 .page-404-container .text-container .page-not-found {
+        font-size: 1.25rem;
+    }
+
+    #page-404 .page-404-container .text-container .oops {
+        font-size: 1rem;
+    }
+
+    #page-404 .page-404-container .text-container .back-to-home-btn {
+        padding: .5rem 1.5rem;
+    }
+
+}

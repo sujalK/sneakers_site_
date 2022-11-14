@@ -1,0 +1,43 @@
+/* redish background for selected card */
+.redish {
+    background-color: rgb(233, 87, 126) !important;
+    color: #fff !important;
+}
+
+/* save-button */
+.save-button {
+    text-transform: uppercase;
+    position: fixed;
+    top: 50%;
+    left: -18px;
+    z-index: 10000;
+    transform: rotate(270deg);
+    background: rgb(34, 160, 182);
+    padding: .25rem .75rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.save-button:hover {
+    background: rgb(15, 210, 245);
+    transform: rotate(320deg);
+}
+
+/* hide-show-btn */
+.hide-show-btn {
+    font-size: .55rem;
+    margin-left: 1.2rem;
+    font-weight: 100;
+    border: 1.5px solid goldenrod;
+    padding: .25rem .5rem;
+    border-radius: 10%;
+    color: #555;
+    cursor: pointer;
+}
+
+.hide-show-btn:hover {
+    border: 1.5px solid rgb(228, 45, 45);
+    color: rgb(216, 81, 81);
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* register utilities */
+.login-text {
+    color: #126ce1;
+    font-weight: bold;
+}
+
+.terms,
+.privacy-policy,
+.fees {
+    color: #126ce1;
+}
+
+.create-account-btn {
+    background-color: #0f6eea !important;
+    color: #fff;
+    padding: .75rem 2rem;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.create-account-btn:hover {
+    background-color: #006ffe !important;
+}
+
+/* register */
+#register {
+    margin-top: 9em;
+    /* background: #fff; */
+}
+
+#register .register-container {
+    /* padding: 0 .75rem; */
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-gap: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+}
+
+/* background image */
+#register .register-container .img-container {
+    background: url('../images/register.jpg') no-repeat center center/cover;
+}
+
+#register .register-container .text-container .header-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.25rem;
+    padding: 2.75rem 0;
+}
+
+#register .register-container .text-container .description-text .register-text {
+    line-height: 2;
+}
+
+#register .register-container .text-container .register-form .usernames, 
+#register .register-container .text-container .register-form .contact-info,
+#register .register-container .text-container .register-form .password-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#register .register-container .text-container .register-form .usernames .form-group, 
+#register .register-container .text-container .register-form .contact-info .form-group,
+#register .register-container .text-container .register-form .password-group .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#register .register-container .text-container .register-form .usernames .form-group input[type="text"], 
+#register .register-container .text-container .register-form .contact-info .form-group input[type="email"],
+#register .register-container .text-container .register-form .password-group .form-group input[type="password"],
+#register .register-container .text-container .register-form .contact-info .form-group input[type="tel"] {
+    font-size: 1.1rem;
+    padding: .25rem .3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#register .register-container .text-container .register-form .usernames .form-group label, 
+#register .register-container .text-container .register-form .contact-info .form-group label,
+#register .register-container .text-container .register-form .password-group .form-group label {
+    margin-bottom: .25rem;
+}
+
+#register .register-container .text-container .register-form .usernames .form-group, 
+#register .register-container .text-container .register-form .contact-info .form-group,
+#register .register-container .text-container .register-form .password-group .form-group {
+    padding: .75rem 0;
+}
+
+#register .register-container .text-container .register-form .email-sub-container,
+#register .register-container .text-container .register-form .terms-and-agreement-contaienr {
+    margin: .75rem 0;
+}
+
+#register .register-container .text-container .register-form .crete-account-container {
+    padding: .75rem 0;
+}
+
+#register .register-container .text-container .register-form .crete-account-container input[type="submit"] {
+    cursor: pointer;
+}
+
+#register .register-container .text-container {
+    padding: 3.25rem 1.25rem 3.25rem .75rem;
+}
+
+#register .register-container .text-container .register-form .already-account .login-text:hover {
+    color: #0670fb !important;
+}
+
+/* for smaller devices */
+@media screen and (max-width: 700px) {
+    #register .register-container .img-container {
+        display: none;
+    }
+
+    #register .register-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #register .register-container .text-container .register-form .usernames, 
+    #register .register-container .text-container .register-form .contact-info,
+    #register .register-container .text-container .register-form .password-group {
+        grid-template-columns: 1fr;
+    }
+
+    #register .register-container .text-container .register-form .usernames .form-group:first-child {
+        margin-top: .5rem;
+    }
+    
+    #register .register-container .text-container .register-form .usernames .form-group, 
+    #register .register-container .text-container .register-form .contact-info .form-group,
+    #register .register-container .text-container .register-form .password-group .form-group {
+        padding: .5rem 0;
+    }
+}

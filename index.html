@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- for slider -->
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/linearicons@1.0.2/dist/web-font/style.min.css" />
+  <link rel="stylesheet" href="css/index_utilities.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/toast_notification.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- utilities -->
+  <link rel="stylesheet" href="./css/utilities/style.css">
+  <link rel="stylesheet" href="./css/enlarge_modal.css">
+  <title>2 feat | Let's explore new arrivals</title>
+</head>
+<body>
+
+  <!-- save-button -->
+  <div class="save-button" id="save-btn">
+    <i class="lnr lnr-checkmark-circle"></i>&nbsp; save 
+  </div>
+  
+  <!-- top-header -->
+  <section id="hero">
+    <div class="container hero-container">
+      <!-- div: header -->
+      <div class="header">
+        <div class="main-header">
+          <div href="#" class="search uppercase"><span class="lnr lnr-magnifier"></span></div>
+          <a href="sneaker_styles.html" class="styles hide-menu-item uppercase">Styles</a>
+          <div class="logo-container logo">
+            <img src="images/logo.png" alt="">
+            <!-- <p class="uppercase">2Feat</p> -->
+          </div>
+          <a href="sneaker_news.html" class="news hide-menu-item uppercase">saved items</a>
+          <div class="navbar" id="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <!-- div: mobile-header , for showing it on smaller devices -->
+        <div class="mobile-header">
+          <span class="uppercase release-dates">Release dates</span>
+          <a href="#" class="uppercase mobile-tab">Jordan</a>
+          <a href="#" class="uppercase mobile-tab">Yeezy</a>
+          <a href="#" class="uppercase mobile-tab">sneaker</a>
+        </div>
+      </div>
+      <!-- div: center-text -->
+      <div class="center-text">
+        <h1 class="hero-text uppercase">
+          dunk low <br />
+          'Championship red'
+        </h1>
+        <a href="#" class="link-text underline">Shop now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- div to go , when clicked -->
+  <div id="goto-div"></div>
+
+  <!-- section: tabs -->
+  <section id="tabs" class="stick-tab">
+    <div class="container tabs-container">
+      <div id="tab-2" data-slider-id="pants" data-show="no" class="tab">
+        <img src="vectors/pant_tab.png" class="icon" alt="pants" />
+      </div>
+      <div id="tab-3" data-slider-id="tshirts" data-show="no" class="tab">
+        <img src="vectors/tshirt_tab.png" class="icon" alt="t-shirts" />
+      </div>
+      <div id="tab-4" data-slider-id="jackets" data-show="no" class="tab">
+        <img src="vectors/jacket_tab.png" class="icon" alt="jackets" />
+      </div>
+      <div id="tab-5" data-slider-id="hats" data-show="no" class="tab">
+        <img src="vectors/cap_tab.png" class="icon" alt="caps" />
+      </div>
+      <div id="tab-1" data-slider-id="accessories" data-show="no" class="tab">
+        <img src="vectors/accessories.png" class="icon" alt="caps" />
+      </div>
+      <div id="tab-6" data-slider-id="shoes" data-show="no" class="tab">
+        <img src="vectors/shoe_tab.png" class="icon" alt="caps" />
+      </div>
+      <!-- <div id="tab-1" class="tab"><img src="vectors/shoe_tab.png" class="icon" alt="shoes"></div> -->
+    </div>
+  </section>
+
+  <!-- section: tab-contents -->
+  <section id="tab-contents">
+    <div class="container tab-contents-container">
+
+      <!-- div: tab-1-content [for accessories] -> <-- accessories -- -->
+      <div id="tab-1-slide-to"></div>
+      <div id="tab-1-content" class="tab-content-item">
+        <!-- <h1 class="uppercase">New Releases</h1> -->
+        <div class="filter">
+          <select name="" id="">
+            <option value="men">Men</option>
+            <option value="men">Women's</option>
+            <option value="men">Kids</option>
+          </select>
+        </div>
+        <div class="accessories accessories-slider" id="accessories-slider-wrapper">
+          <!-- IT'S accessories, not shoes content -->
+          <div class="card accessory" id="PROD_101">
+            <div class="img-container">
+              <img src="images/accessories_1.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Air Jordan</span>
+              <b class="uppercase">Air jordan 13 retro 'del sol'</b>
+            </div>
+          </div>
+          <div class="card accessory" id="PROD_102">
+            <div class="img-container">
+              <img src="images/accessories_2.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Air jordan</span>
+              <b class="uppercase">air jordan 12 retro 'playoff' 2022</b>
+            </div>
+          </div>
+          <div class="card accessory" id="PROD_103">
+            <div class="img-container">
+              <img src="images/accessories_3.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Air jordan</span>
+              <b class="uppercase">Air Jordan 1 high</b>
+            </div>
+          </div>
+          <div class="card accessory" id="PROD_104">
+            <div class="img-container">
+              <img src="images/accessories_4.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Adidas</span>
+              <b class="uppercase">yeezy boost 350 V2 'oreo'</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-6-slide-to"></div>
+      <div id="tab-6-content" class="tab-content-item">
+        <!-- <h1 class="uppercase">New Releases</h1> -->
+        <div class="filter">
+          <select name="" id="">
+            <option value="men">Men</option>
+            <option value="men">Women's</option>
+            <option value="men">Kids</option>
+          </select>
+        </div>
+        <div class="shoes shoes-slider" id="shoe-slider-wrapper">
+          <!-- IT'S shoes content -->
+          <div class="card shoe" id="PROD_901">
+            <div class="img-container">
+              <img src="images/shoe_list_1.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Air Jordan</span>
+              <b class="uppercase">Air jordan 13 retro 'del sol'</b>
+            </div>
+          </div>
+          <div class="card shoe" id="PROD_902">
+            <div class="img-container">
+              <img src="images/accessories_2.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Air jordan</span>
+              <b class="uppercase">air jordan 12 retro 'playoff' 2022</b>
+            </div>
+          </div>
+          <div class="card shoe" id="PROD_903">
+            <div class="img-container">
+              <img src="images/accessories_3.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Air jordan</span>
+              <b class="uppercase">Air Jordan 1 high</b>
+            </div>
+          </div>
+          <div class="card shoe" id="PROD_904">
+            <div class="img-container">
+              <img src="images/accessories_4.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Adidas</span>
+              <b class="uppercase">yeezy boost 350 V2 'oreo'</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-5-slide-to"></div>
+      <div id="tab-5-content" class="tab-content-item">
+        <!-- div: tab-5-content [for hats] -->
+        <!-- <h1 class="uppercase">hats</h1> -->
+        <div class="filter">
+          <select name="" id="">
+            <option value="men">Men</option>
+            <option value="men">Women's</option>
+            <option value="men">Kids</option>
+          </select>
+        </div>
+        <div class="hats hat-slider">
+          <div class="card hat" id="PROD_105">
+            <div class="img-container">
+              <img src="images/hat_1.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card hat" id="PROD_106">
+            <div class="img-container">
+              <img src="images/hat_2.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card hat" id="PROD_107">
+            <div class="img-container">
+              <img src="images/hat_3.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card hat" id="PROD_108">
+            <div class="img-container">
+              <img src="images/hat_4.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-4-slide-to"></div>
+      <div id="tab-4-content" class="tab-content-item">
+        <!-- div: tab-4-content [for jackets] -->
+        <!-- <h1 class="uppercase">jackets</h1> -->
+        <div class="filter">
+          <select name="" id="">
+            <option value="men">Men</option>
+            <option value="men">Women's</option>
+            <option value="men">Kids</option>
+          </select>
+        </div>
+        <div class="jackets jacket-slider">
+          <div class="card jacket" id="PROD_109">
+            <div class="img-container">
+              <img src="images/jacket_1.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card jacket" id="PROD_110">
+            <div class="img-container">
+              <img src="images/jacket_2.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card jacket" id="PROD_111">
+            <div class="img-container">
+              <img src="images/jacket_3.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card jacket" id="PROD_112">
+            <div class="img-container">
+              <img src="images/jacket_4.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-3-slide-to"></div>
+      <div id="tab-3-content" class="tab-content-item">
+        <!-- div: tab-3-content [for tshirt] -->
+        <!-- <h1 class="uppercase">t-shirts</h1> -->
+        <!-- <h1 class="uppercase">New releases</h1> -->
+        <div class="filter">
+          <select name="" id="">
+            <option value="men">Men</option>
+            <option value="men">Women's</option>
+            <option value="men">Kids</option>
+          </select>
+        </div>
+        <div class="tshirts tshirt-slider">
+          <div class="card tshirt" id="PROD_113">
+            <div class="img-container">
+              <img src="images/shirt_1.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card tshirt" id="PROD_114">
+            <div class="img-container">
+              <img src="images/shirt_2.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card tshirt" id="PROD_115">
+            <div class="img-container">
+              <img src="images/shirt_3.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card tshirt" id="PROD_116">
+            <div class="img-container">
+              <img src="images/shirt_4.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-2-slide-to"></div>
+      <div id="tab-2-content" class="tab-content-item">
+        <!-- div: tab-2-content [for pants] -->
+        <!-- <h1 class="uppercase">pants</h1> -->
+        <!-- <h1 class="uppercase">New releases</h1> -->
+        <div class="filter">
+          <select name="" id="">
+            <option value="men">Men</option>
+            <option value="men">Women's</option>
+            <option value="men">Kids</option>
+          </select>
+        </div>
+        <div class="pants pant-slider">
+          <div class="card pant" id="PROD_117">
+            <div class="img-container">
+              <img src="images/pant_1.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card pant" id="PROD_118">
+            <div class="img-container">
+              <img src="images/pant_2.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card pant" id="PROD_119">
+            <div class="img-container">
+              <img src="images/pant_3.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+          <div class="card pant" id="PROD_120">
+            <div class="img-container">
+              <img src="images/pant_4.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- section: new-releases -->
+  <section id="new-releases">
+    <div class="container new-releases-container">
+      <h1 class="uppercase">new releases <span class="hide-show-btn">hide</span></h1>
+      <div class="releases">
+        <div class="card release" id="PROD_121">
+          <div class="img-container">
+            <img src="images/shoe_list_5.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card release" id="PROD_122">
+          <div class="img-container">
+            <img src="images/shoe_list_6.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card release" id="PROD_123">
+          <div class="img-container">
+            <img src="images/shoe_list_7.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card release" id="PROD_124">
+          <div class="img-container">
+            <img src="images/shoe_list_8.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card release" id="PROD_125">
+          <div class="img-container">
+            <img src="images/shoe_list_2.jpg" alt="">
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card release" id="PROD_126">
+            <div class="img-container">
+                <img src="images/shoe_list_3.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+        </div>
+        <div class="card release" id="PROD_127">
+            <div class="img-container">
+                <img src="images/shoe_list_4.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+        </div>
+        <div class="card release" id="PROD_128">
+            <div class="img-container">
+                <img src="images/shoe_list_5.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+        </div>
+      </div>
+      <div class="last-button">
+        <a href="#" class="uppercase classic-black-btn">See more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section: top-20-picks -->
+  <section id="top-20-picks">
+    <div class="container top-20-picks-container">
+      <h1 class="uppercase">top 20 picks <span class="hide-show-btn">hide</span></h1>
+      <div class="picks">
+        <div class="card pick" id="PROD_129">
+          <div class="img-container">
+            <img src="images/shoe_list_1.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card pick" id="PROD_130">
+          <div class="img-container">
+            <img src="images/shoe_list_2.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card pick" id="PROD_131">
+          <div class="img-container">
+            <img src="images/shoe_list_3.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card pick" id="PROD_132">
+          <div class="img-container">
+            <img src="images/shoe_list_4.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card pick" id="PROD_133">
+          <div class="img-container">
+            <img src="images/shoe_list_5.jpg" alt="">
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card pick" id="PROD_134">
+            <div class="img-container">
+                <img src="images/shoe_list_6.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+        </div>
+        <div class="card pick" id="PROD_135">
+            <div class="img-container">
+                <img src="images/shoe_list_7.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+        </div>
+        <div class="card pick" id="PROD_136">
+            <div class="img-container">
+                <img src="images/shoe_list_8.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <span>Nike</span>
+              <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            </div>
+        </div>
+      </div>
+      <div class="last-button">
+        <a href="#" class="uppercase classic-black-btn">See more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section: <- featured ->  [ air-jordan ] -->
+  <section id="featured">
+    <div class="container featured-container">
+      <h1 class="uppercase">air jordan <span class="hide-show-btn">hide</span></h1>
+      <div class="featured-items">
+        <div class="card item" id="PROD_137">
+          <div class="img-container">
+            <img src="images/shoe_list_2.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            <!-- show details button -->
+            <div class="read-more-btn">
+              <!-- button to make it appear on the slider -->
+              <button class="enlarge-btn see-facts" data-slider-parent-tab="#tab-6" data-slider-tab="#shoe-slider-wrapper" data-slider-image-type="shoe" data-slider-image="images/shoe_list_2.jpg" data-slider-heading="Nike" data-slider-text="Lorem ipsum dolor sit amet.">slide</button>
+              
+              <!-- make type dynamic : the links here data dynamic, and those data needs to come from the backend -->
+              <!-- <a href="#" class="inline-btn see-facts" data-slider-parent-tab="#tab-6" data-slider-tab="#shoe-slider-wrapper" data-slider-image-type="shoe" data-slider-image="images/shoe_list_2.jpg" data-slider-heading="Nike" data-slider-text="Lorem ipsum dolor sit amet.">facts &rarr;</a> -->
+              <!-- <a href="#" class="inline-btn see-facts" data-slider-parent-tab="#tab-1" data-slider-tab="#accessories-slider-wrapper" data-slider-image-type="accessory" data-slider-image="images/shoe_list_2.jpg" data-slider-heading="Nike" data-slider-text="Lorem ipsum dolor sit amet.">facts &rarr;</a> -->
+              
+              <!-- link for "show page" redirection (to take to the show page) -->
+              <a href="#" class="inline-btn">facts &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="card item" id="PROD_138">
+          <div class="img-container">
+            <img src="images/shoe_list_3.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card item" id="PROD_139">
+          <div class="img-container">
+            <img src="images/shoe_list_1.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card item" id="PROD_140">
+          <div class="img-container">
+            <img src="images/shoe_list_4.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card item" id="PROD_141">
+          <div class="img-container">
+            <img src="images/shoe_list_5.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card item" id="PROD_142">
+          <div class="img-container">
+            <img src="images/shoe_list_6.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card item" id="PROD_143">
+          <div class="img-container">
+            <img src="images/shoe_list_7.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+        <div class="card item" id="PROD_144">
+          <div class="img-container">
+            <img src="images/shoe_list_8.jpg" alt="" />
+          </div>
+          <div class="card-text">
+            <span>Nike</span>
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+          </div>
+        </div>
+      </div>
+      <div class="last-button">
+        <a href="#" class="uppercase classic-black-btn">Load more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section: shop-by-category -->
+  <section id="shop-by-category">
+    <div class="container shop-by-category-container">
+      <h1 class="uppercase">browse more...</h1>
+      <div class="slider">
+        <!-- slider -->
+        <div class="card slider-item" id="PROD_145">
+          <div class="img-container">
+            <img src="images/shoe_list_1.jpg" alt="" />
+          </div>
+          <b>Lorem ipsum dolor sit amet.</b>
+        </div>
+        <div class="card slider-item" id="PROD_146">
+          <div class="img-container">
+            <img src="images/shoe_list_2.jpg" alt="" />
+          </div>
+          <b>Lorem ipsum dolor sit amet.</b>
+        </div>
+        <div class="card slider-item" id="PROD_147">
+          <div class="img-container">
+            <img src="images/shoe_list_3.jpg" alt="" />
+          </div>
+          <b>Lorem ipsum dolor sit amet.</b>
+        </div>
+        <div class="card slider-item" id="PROD_148">
+          <div class="img-container">
+            <img src="images/shoe_list_4.jpg" alt="" />
+          </div>
+          <b>Lorem ipsum dolor sit amet.</b>
+        </div>
+        <div class="card slider-item" id="PROD_149">
+          <div class="img-container">
+            <img src="images/shoe_list_5.jpg" alt="" />
+          </div>
+          <b>Lorem ipsum dolor sit amet.</b>
+        </div>
+        <div class="card slider-item" id="PROD_150">
+          <div class="img-container">
+            <img src="images/shoe_list_6.jpg" alt="" />
+          </div>
+          <b>Lorem ipsum dolor sit amet.</b>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- top-picks -->
+	<section id="top-picks">
+		<div class="container top-picks-container">
+			<div class="pick">
+				<div class="img-container">
+					<img src="images/designer_1.jpg" alt="">
+				</div>
+				<div class="text-container">
+					<span class="job-role">Popular Designer</span>
+					<p class="name">Joseph</p>
+					<a href="#" class="shop-now-link underline">Shop now</a>
+				</div>
+			</div>
+			<div class="pick">
+				<div class="img-container">
+					<img src="images/designer_2.webp" alt="">
+				</div>
+				<div class="text-container">
+					<span class="job-role">Popular Designer</span>
+					<p class="name">Camilla and Marc</p>
+					<a href="#" class="shop-now-link underline">Shop now</a>
+				</div>
+			</div>
+			<div class="pick">
+				<div class="img-container">
+					<img src="images/designer_3.jpg" alt="">
+				</div>
+				<div class="text-container">
+					<span class="job-role">Popular Designer</span>
+					<p class="name">Iceberg</p>
+					<a href="#" class="shop-now-link underline">Shop now</a>
+				</div>
+			</div>
+			<div class="pick">
+				<div class="img-container">
+					<img src="images/designer_1.jpg" alt="">
+				</div>
+				<div class="text-container">
+					<span class="job-role">Popular Designer</span>
+					<p class="name">Iceberg</p>
+					<a href="#" class="shop-now-link underline">Shop now</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <!-- section: blog-stories -->
+  <section id="blog-stories">
+    <div class="container blog-stories-container">
+      <h1 class="uppercase">blogs</h1>
+      <div class="stories">
+        <div class="blog">
+          <div class="img-container">
+            <img src="images/blog.jpg" alt="" />
+          </div>
+          <div class="text-container">
+            <b clas="uppercase">Lorem ipsum dolor sit amet.</b>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+              facere saepe nemo voluptatibus et excepturi rem explicabo
+              perferendis odit minima.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="history">
+          <div class="img-container">
+            <img src="images/history.jpg" alt="" />
+          </div>
+          <div class="text-container">
+            <b class="uppercase">Lorem ipsum dolor sit amet.</b>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+              facere saepe nemo voluptatibus et excepturi rem explicabo
+              perferendis odit minima.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-logo-container">
+        <div class="img-logo-container">
+          <!-- <img src="" alt=""> -->
+        </div>
+      </div>
+      <div class="footer-text-container">
+        <div>
+          <b>Trending</b>
+          <a href="#">Air Jordans</a>
+          <a href="#">Nike Dunks</a>
+          <a href="#">New Balance 990</a>
+          <a href="#">New Balance 327</a>
+          <a href="#">Air Max Day 2022</a>
+          <a href="#">Toddler sneakers</a>
+        </div>
+        <div>
+          <b>New Releases</b>
+          <a href="#">Air Jordan 1 High 'Rebellionaire' <br />
+            (3/19/2022)</a>
+          <a href="#">Air Jordan 13 'Del Sol' (3/19/2022)</a>
+          <a href="#">Yeezy 350 V2 'Bone' (3/21/2022)</a>
+          <a href="#">Yeezy 700 'Wave Runner' (3/22/2022)</a>
+          <a href="#">Air Jordan 3 'Muslin' (3/25/2022)</a>
+          <a href="#">Air Jordan 1 High '85 'Georgetown' (4/2/2022)</a>
+        </div>
+        <div>
+          <b>Account</b>
+          <a href="#">My Account</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Sell Sneakers</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+        <div>
+          <b>About Us</b>
+          <a href="#">Our History</a>
+          <a href="#">Stores</a>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Support</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+        </div>
+        <div class="subscribe-form-div">
+          <b>Sign Up For News & Promotions</b>
+          <form action="" method="POST" class="subscribe-form">
+            <div class="form-group">
+              <label for="subscribe_email">Email Address</label>
+              <input type="email" name="subscribe_email" id="subscribe_email" />
+              <button type="submit">
+                <i style="font-weight: bold" class="lnr lnr-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+          <p class="subscribe-text">
+            By signing up, you confirm you are <br />
+            over 16 years old age and you want <br />
+            to receive 2feat emails. Please <br />
+            see our
+            <a href="#" class="white-text">Terms and Conditions</a> and <br />
+            <a href="#" class="white-text">Privacy Policy</a> for more
+            details.
+          </p>
+        </div>
+        <!-- copyright -->
+        <div class="copyright">
+          <div class="terms-privacy">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Press</a>
+            <a href="#">Jobs</a>
+          </div>
+          <div class="copyright-text">
+            &copy; 2022 2feat. All rights reserved.
+          </div>
+          <div class="uppercase">
+            <span class="round-currency"> &#36; USD </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- hamburger menu: navbar -->
+  <nav id="navbar">
+    <span class="lnr lnr-cross" id="close-btn"></span>
+    <!-- <a href="#" class="uppercase">Services</a> -->
+    <a href="sneaker_styles.html" class="uppercase">Styles</a>
+    <a href="sneaker_news.html" class="uppercase">News</a>
+    <a href="contact_us.html" class="uppercase">Contact us</a>
+    <a href="register.html" class="uppercase">Login / Register</a>
+  </nav>
+
+  <!-- search-modal -->
+  <section id="search-modal">
+    <div class="container search-modal-container">
+      <div class="top-right-escape">
+        <span class="lnr lnr-cross"></span>
+        <span>esc</span>
+      </div>
+      <form action="" method="POST">
+        <div class="form-group">
+          <input type="search" name="search_products" id="search_products" placeholder="search products...">
+        </div>
+        <input type="submit" value="Search" class="search-btn">
+      </form>
+    </div>
+  </section>
+
+  <!-- section: info-modal -->
+  <section id="info-modal" class="show-info-modal">
+    <div class="container info-modal-container">
+      <span class="close-info-modal-btn">&times;</span>
+      <div class="video-container">
+        <video class="instructions-video" height="240" controls> <!-- video tag -->
+          <source src="movie.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="text-container">
+        <div class="instructions-container">
+          <p class="instructions-text">Please follow the instructions below on how to use the website or watch the above video.</p>
+          <ul class="instructions">
+            <li>Press on the hide to hide the category. (The hidden cateogry goes to left hand side)</li>
+            <li>When clicked on the category which is hidden from left side, it appears on the screen again.</li>
+            <li>Tap on the image, after taping, it's background turns into pinkish color.</li>
+            <li>On tapped state, on the left hand side, save button appears, and clicking there saves the product.</li>
+          </ul>
+        </div>
+        <div class="disagree-container">
+          <div class="disagree-text">
+            <input type="checkbox" id="modal-video-hide">&nbsp;&nbsp;<span class="alert-text info-confirmation-text">Don't show again.</span>
+          </div>
+        </div>
+        <div class="ok-close-btn"><i class="lnr lnr-checkmark-circle"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section: toast-notification -->
+  <div id="toast-notification">
+    
+    <!-- <div class="notice">
+      <span class="check-circle">
+        <i class="lnr lnr-checkmark-circle"></i> 
+      </span>
+      <span class="saved-text">Saved successfully <a href="#" class="underline">show</a></span>
+      <span class="close-notice">&times;</span>
+    </div> -->
+   
+  </div>
+
+  <!-- modal for enlarged image -->
+  <div id="enlarge-modal" class="hidden-enlarge">
+    <div class="container enlarged-modal-container">
+      <span class="close-modal">&times;</span>
+      <div class="image-div">
+        <img alt="" class="image-w enlarge-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- for slider -->
+  <script type="text/javascript" src="./js/jquery_1.1.js"></script>
+  <script type="text/javascript" src="./js/jquery_migrate.js"></script>
+  <script src="js/slick.min.js"></script>
+
+  <!-- slider -->
+  <script src="js/slider_settings.js"></script>
+  <!-- script -->
+  <script src="js/script_v2.js"></script>
+
+  <!-- app.js -->
+  <!-- <script src="js/app.js"></script> -->
+
+  <!-- app_modified.js -->
+  <script src="js/app_modified.js"></script>
+
+  <!-- for click and save the clicked items -->
+  <!-- <script src="js/click_save.js"></script> -->
+
+  <!-- script: for toast notification -->
+  <script src="js/toast_notif.js"></script>
+
+  <!-- regex selector -->
+  <script src="js/regex_selector.js"></script>
+
+  <!-- working javascript file -->
+  <script src="js/click_and_save.js"></script>
+
+  <!-- script for modal: to show for website visitors when they've visited for the first time -->
+  <script src="js/modal.js"></script>
+
+  <!-- enlarge modal -->
+  <script src="./js/enlarge_modal.js"></script>
+
+  <script>
+    // the putting of product into the slider
+    function addItemToSlider (e) {
+
+      // add to slider only if it's not present in the localStorage
+      if (isItemInLS(e.target.parentElement.parentElement.parentElement.id)  === false) {
+        // when click to
+        document.querySelector(e.target.dataset.sliderParentTab).click();
+  
+        // document.querySelector('#shoe-slider-wrapper');
+  
+        // Add a slider
+        $(e.target.dataset.sliderTab).slick('slickAdd', `
+          <div>
+            <div>
+              <div class="card ${e.target.dataset.sliderImageType}" id="PROD_901">
+                <div class="img-container">
+                  <img src="${e.target.dataset.sliderImage}" alt="" />
+                </div>
+                <div class="card-text">
+                  <span>${e.target.dataset.sliderHeading}</span>
+                  <b class="uppercase">${e.target.dataset.sliderText}</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        `, 0, 'addBefore');
+      }
+
+
+      // add item to localStorage too, if it's added to slider
+      addToLS(e.target.parentElement.parentElement.parentElement.id);
+
+      return false;
+    }
+
+    // add event listener to see-facts
+    document.querySelector('.see-facts')
+    .addEventListener('click', addItemToSlider);
+  </script>
+
+  <!-- save to localStorage too if it's put into the slider -->
+  <script src="./js/ls_slider_items.js"></script>
+</body>
+</html>

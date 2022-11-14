@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* div: saved-items */
+#saved-items {
+    margin-top: 7em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#saved-items .saved-items-container .saved-items-title-text {
+    text-transform: uppercase;
+    padding: .25rem .5rem;
+}
+
+.saved-items-line,
+.first-saved-items-line {
+    width: 92%;
+    height: 2px;
+    background: #ebebeb;
+    margin: 0 1.25rem 0 .2rem;
+}
+
+.saved-items-line:last-child {
+    display: none;
+}
+
+/* saved-items utilities */
+.saved-item-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.item-price {
+    color: #999;
+}
+
+.in-stock-color {
+    color: green;
+}
+
+.out-of-stock-color {
+    color: red;
+}
+
+/* saved-items-list */
+#saved-items-list {
+    
+}
+
+#saved-items-list .saved-items {
+
+}
+
+#saved-items-list .saved-items .item {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin: 1.25rem 0;
+}
+
+#saved-items-list .saved-items .item .img-container {
+    width: 100px;
+}
+
+#saved-items-list .saved-items .item .text-container {
+    justify-self: left;
+    width: 90%;
+
+}
+
+#saved-items-list .saved-items .item .text-container .bottom-text {
+    display: flex;
+    justify-content: right;
+    margin: .75rem 0;
+}
+
+#saved-items-list .saved-items .item .text-container .bottom-text .pipe-sign {
+    padding: 0 .5rem;
+}
+
+#saved-items-list .saved-items .item .text-container .bottom-text .remove-saved-item {
+    color: rgb(235, 49, 49);
+    cursor: pointer;
+}
+
+#saved-items-list .saved-items .item .text-container .bottom-text .visit-link a {
+    color: rgb(37, 157, 200);
+}
+
+#saved-items-list .saved-items .item .text-container .top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#saved-items-list .saved-items .item .text-container .top-text .right-text div {
+    font-size: 1.5rem;
+}
+
+/* for smaller devices */
+@media screen and (max-width: 700px) {
+    .saved-item-name {
+        font-size: 1.25rem;
+    }
+
+    #saved-items-list .saved-items .item .text-container .top-text .right-text div {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    #saved-items {
+        margin-top: 10em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #saved-items-list .saved-items .item .text-container .top-text {
+        flex-direction: column;
+        line-height: 2;
+    }
+
+    #saved-items-list .saved-items .item .text-container .top-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #saved-items-list .saved-items .item .text-container .bottom-text {
+        justify-content: center;
+    }
+
+    #saved-items-list .saved-items .item {
+        grid-template-columns: 1fr;
+    }
+
+    #saved-items .saved-items-container .saved-items-title-text {
+        font-size: 1.5rem;
+    }
+}

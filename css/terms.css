@@ -1,0 +1,30 @@
+/* Section: terms */
+#terms {
+    margin-top: 7em;
+    padding: .75rem;
+}
+
+.terms-title {
+    font-weight: bold;
+    padding-bottom: 1.25rem;
+}
+
+.terms-subtitle {
+    font-weight: bold;
+    font-size: .85rem;
+    padding-bottom: .25rem;
+}
+
+.terms-release-date {
+    padding: .75rem 0;
+}
+
+.terms-description {
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+    #terms {
+        margin-top: 9em;
+    }
+}

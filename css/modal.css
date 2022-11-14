@@ -1,0 +1,105 @@
+/* hide the modal at first */
+#info-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* opacity: .95; */
+    padding: 1.25rem;
+    background: #fff;
+    z-index: 111111111111111111111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    /* overflow-y: scroll; */
+}
+
+#info-modal .info-modal-container {
+    background: #fff;
+    padding: 3.5rem 1.75rem;
+    position: relative;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+#info-modal .info-modal-container .close-info-modal-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s all;
+    position: absolute;
+    right: 32px;
+    top: 5px;
+}
+
+#info-modal .info-modal-container .close-info-modal-btn:hover {
+    color: red;
+}
+
+#info-modal .info-modal-container .video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+#info-modal .info-modal-container .text-container {
+    align-items: center;
+    line-height: 2;
+}
+
+#info-modal .info-modal-container .text-container .instructions-container .instructions {
+    list-style: circle;
+    /* font-size: .7rem; */
+}
+
+#info-modal .info-modal-container .text-container .disagree-container .disagree-text {
+    display: flex;
+    align-items: center;
+}
+
+#info-modal .info-modal-container .text-container .disagree-container .disagree-text > span {
+    padding-right: .75rem;
+}
+
+/* show the modal */
+.show-info-modal {
+    display: flex !important;
+}
+
+/* alert-text */
+.alert-text {
+    color: rgb(248, 26, 26);
+}
+
+.ok-close-btn {
+    margin-top: .5rem;
+    cursor: pointer;
+    text-align: center;
+    max-width: 90px;
+    border: 1px solid #000;
+    padding: .25rem 2rem;
+    transition: .2s all;
+}
+
+.ok-close-btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+.info-confirmation-text {
+    cursor: pointer;
+}
+
+.instructions-video {
+    width: 100% !important;
+    height: 300px !important;
+    margin: auto;
+}
+
+@media screen and (max-width: 550px) {
+    .instructions-video {
+        width: 100% !important;
+        /* width: 280px !important; */
+    }
+}

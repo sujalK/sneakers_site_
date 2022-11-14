@@ -1,0 +1,101 @@
+body { background: #fff; }
+.keychain-image {
+    width: 120px;
+    height: 120px;
+    transform: rotate(170deg);
+}
+
+/* section: reset-email */
+#reset-email {
+    margin-top: 7em;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    height: 450px;
+}
+
+#reset-email .reset-email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#reset-email .reset-email-container h1 {
+    padding: 1.25rem 0 0 .25rem;
+}
+
+#reset-email .reset-email-container p {
+    padding: .5rem 0 0 0;
+    text-align: center;
+    line-height: 1.7;
+}
+
+#reset-email .reset-email-container .reset-email {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem;
+}
+
+#reset-email .reset-email-container .reset-email .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 0  0 1.25rem 0;
+}
+
+#reset-email .reset-email-container .reset-email .form-group label {
+    padding-bottom: .5rem;
+    color: rgb(100, 99, 99);
+    font-weight: 600;
+}
+
+#reset-email .reset-email-container .reset-email .form-group input[type="email"] {
+    font-size: 1rem;
+    padding: .5rem;
+    border: 2px solid #ebebeb;
+    outline: none;
+    border-radius: 5px;
+}
+
+#reset-email .reset-email-container .reset-email input[type="submit"] {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    background: rgb(83,53,157);
+    color: #fff;
+    padding: .5rem .75rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-email .reset-email-container .reset-email input[type="submit"]:hover {
+    background: rgb(83, 40, 194);
+}
+
+#reset-email .reset-email-container .reset-email .login-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+#reset-email .reset-email-container .reset-email .login-link span {
+    padding-right: .5rem;
+}
+
+#reset-email .reset-email-container .reset-email .login-link {
+    color: gray;
+}
+
+/* for smaller devices */
+@media screen and (max-width: 500px) {
+    .keychain-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    #reset-email .reset-email-container .reset-email {
+        max-width: 270px;
+    }
+}
